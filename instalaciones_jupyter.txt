@@ -1,0 +1,13 @@
+# cambio para que el tabulador complemente la informacion el el codigo
+
+python -mpip install biopython
+python -mpip install matplotlib
+python -mpip install requests
+python -mpip install xmltramp2
+python -mpip install --force-reinstall --no-color jedi==0.17.0
+
+
+# dentro de clustalo
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
